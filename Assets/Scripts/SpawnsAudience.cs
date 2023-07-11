@@ -13,7 +13,7 @@ public class SpawnsAudience : MonoBehaviour
 	{
 		maxZ = Stats.distance + 2.0f;
 
-		for (int i = 0; i < Stats.stageNumber*5 + 3; i++)
+		for (int i = 0; i < Stats.stageNumber*4 + 3; i++)
 		{
 			GameObject newTerrain = Instantiate(audiencePrefab, audienceParent);
 			newTerrain.transform.position = new Vector3(Random.Range(minX, maxX), y, Random.Range(minZ, maxZ));

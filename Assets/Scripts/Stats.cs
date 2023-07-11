@@ -36,12 +36,12 @@ public class Stats : MonoBehaviour
 		gameTime = 30;
 		distance = -30;
 
-		actorHealth = 25;
-		actorSpeedScalar = 1.0f;
-		playerMovespeed = 3.0f;
+		actorHealth = 100;
+		actorSpeedScalar = 2.0f;
+		playerMovespeed = 1.0f;
 
 		tomatoSpeed = 100;
-		tomatoDamage = 3;
+		tomatoDamage = 10;
 		tomatoSizeScalar = 1;
 		tomatoCount = 20;
 
@@ -61,13 +61,13 @@ public class Stats : MonoBehaviour
 
 		stageNumber += 1;
 		gameTime += 1;
-		distance -= 5;
+		distance -= 2;
 		tomatoCount += 1;
-		tomatoSpeed += 1;
+		tomatoSpeed += 2;
 
-		actorHealth += 4;
-		actorHealth *= 1.04f;
-		actorSpeedScalar *= 1.02f;
+		actorHealth += 5;
+		actorHealth *= 1.03f;
+		actorSpeedScalar *= 1.05f;
 
 		terrainHealth += 1;
 		terrainHealth *= 1.01f;

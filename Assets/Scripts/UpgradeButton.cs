@@ -26,7 +26,7 @@ public class UpgradeButton : MonoBehaviour
 
 			if (UpgradeManager.UpgradeType.ExtraTime == upgradeType)
 			{
-                Stats.gameTime += 10.0f;
+                Stats.gameTime += 15.0f;
 			}
 			else if (UpgradeManager.UpgradeType.PlayerSpeed == upgradeType)
 			{
@@ -46,11 +46,11 @@ public class UpgradeButton : MonoBehaviour
 			}
 			else if (UpgradeManager.UpgradeType.TomatoSize == upgradeType)
 			{
-				Stats.tomatoSizeScalar += 0.2f;
+				Stats.tomatoSizeScalar += 0.5f;
 			}
 			else if (UpgradeManager.UpgradeType.TomatoSpeed == upgradeType)
 			{
-				Stats.tomatoSpeed *= 1.2f;
+				Stats.tomatoSpeed *= 1.5f;
 			}
 		}
         else
